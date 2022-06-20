@@ -1,9 +1,11 @@
-import Colors from "../../../values/Colors";
 import { StyleSheet } from "react-native";
+import { getColorScheme } from "../../../values/Colors";
+
+const Colors = getColorScheme();
 
 export const splashStyles = StyleSheet.create({
     container: {
-        flex: 1,
+        height:'100%',
         backgroundColor: Colors.primary,
     },
     image: {
