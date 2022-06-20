@@ -87,7 +87,7 @@ const darkColors = {
     black: '#000000',
     transparent: 'transparent',
     primary: '#1a8579',
-    lightPrimary: '#1a8579',
+    lightPrimary: '#2eb4a4',
     textPrimary:'#fbfafa',
     backdrop: '#0d0d0d',
     red: '#e74c3c',

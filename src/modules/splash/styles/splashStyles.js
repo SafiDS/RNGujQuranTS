@@ -6,11 +6,12 @@ const Colors = getColorScheme();
 export const splashStyles = StyleSheet.create({
     container: {
         height:'100%',
-        backgroundColor: Colors.primary,
+        backgroundColor: Colors.black,
+        justifyContent: "center",
+        alignItems: "center",
     },
-    image: {
-        width: 360,
-        height: "100%",
+    appText: {
+        color: Colors.textPrimary
     },
     imageContainer: {
         flex: 1,
@@ -19,4 +20,10 @@ export const splashStyles = StyleSheet.create({
         justifyContent: "center",
         alignItems: "center",
     },
+    appVersion : {
+        position:'absolute',
+        bottom: 30,
+        justifyContent:'center',
+        alignItems:'center'
+    }
 });
