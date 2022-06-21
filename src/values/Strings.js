@@ -27,3 +27,5 @@ export const Strings = new LocalizedStrings({
 export const changeLanguage = languageKey => {
     Strings.setLanguage(languageKey);
 };
+
+

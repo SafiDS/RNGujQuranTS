@@ -1,5 +1,9 @@
 import {Platform} from 'react-native';
 
+const LocalStorageConstants = {
+    USER_SESSION: 'USER_SESSION',
+};
+
 const FontName = {
     FeatherIcon: 'feather',
     MaterialIcon: 'material',
@@ -114,4 +118,4 @@ const AD_COMPANY = {
 };
 
 
-export {FontName, Settings, API_CONFIG, subsMonthly, ADMOB_TEST_IDS, AD_COMPANY};
+export {FontName, Settings, API_CONFIG, subsMonthly, ADMOB_TEST_IDS, AD_COMPANY, LocalStorageConstants};

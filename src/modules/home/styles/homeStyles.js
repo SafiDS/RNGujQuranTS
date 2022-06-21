@@ -1,10 +1,9 @@
-import {Platform, StyleSheet} from "react-native";
+import { StyleSheet } from "react-native";
 import { getColorScheme } from "../../../values/Colors";
-import {FontSize} from "../../../values/GlobalStyles";
 
 const Colors = getColorScheme();
 
-export const splashStyles = StyleSheet.create({
+export const homeStyles = StyleSheet.create({
     container: {
         height:'100%',
         backgroundColor: Colors.primary,
@@ -26,15 +25,5 @@ export const splashStyles = StyleSheet.create({
         bottom: 30,
         justifyContent:'center',
         alignItems:'center'
-    },
-    status: {
-        fontSize: FontSize.text14,
-        color: Colors.textPrimary,
-        alignSelf: "center",
-        opacity: 0.7,
-        lineHeight: 21,
-    },
-    bottomContainer: {
-        paddingBottom: Platform.OS === "android" ? 22 : 10,
-    },
+    }
 });

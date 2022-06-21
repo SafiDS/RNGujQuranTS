@@ -4,7 +4,8 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {NavigationContainer} from '@react-navigation/native';
 
 // Screens
-import Splash from 'src/modules/splash/components'
+import Splash from 'src/modules/splash/components';
+import Home from 'src/modules/home/components/home';
 
 // Utils
 import { Screens } from 'src/values/Constants';
@@ -28,7 +29,7 @@ const AppStack = props => {
                     };
                 }}>
                 <Stack.Screen name={Screens.SPLASH} component={Splash} />
-
+                <Stack.Screen name={Screens.HOME} component={Home} />
             </Stack.Navigator>
         </NavigationContainer>
     );

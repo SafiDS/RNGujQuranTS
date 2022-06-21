@@ -4,6 +4,9 @@
   "private": true,
   "scripts": {
     "android": "react-native run-android",
+    "androidrelease": "cd android && ./gradlew assembleRelease",
+    "codepushStaging": "appcenter codepush release-react -a PlaystoreApp/Gujarati-Quran -d Staging",
+    "codepushProduction": "appcenter codepush release-react -a PlaystoreApp/Gujarati-Quran -d Production",
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
@@ -11,6 +14,7 @@
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "1.17.4",
+    "@react-native-community/netinfo": "9.0.0",
     "@react-native-firebase/analytics": "14.9.3",
     "@react-native-firebase/app": "14.9.3",
     "@react-native-firebase/crashlytics": "14.9.3",
@@ -23,7 +27,9 @@
     "react": "17.0.2",
     "react-native": "0.68.2",
     "react-native-code-push": "7.0.4",
+    "react-native-config": "1.4.6",
     "react-native-device-info": "9.0.2",
+    "react-native-encrypted-storage": "4.0.2",
     "react-native-extended-stylesheet": "0.12.0",
     "react-native-google-mobile-ads": "6.2.3",
     "react-native-localization": "2.3.1",

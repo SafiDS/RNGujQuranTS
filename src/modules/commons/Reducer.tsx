@@ -1,6 +1,7 @@
 import { ActionTypes } from "./ActionTypes";
 
 const initialState = {
+    colorScheme: null,
     errorConfig: {
         visible: false,
         title: null,
@@ -13,6 +14,18 @@ const initialState = {
     refresh: false,
     alert: false,
     alertMessage: null,
+    bottomSheetConfig: {
+        visible: false,
+        label: null,
+        message: null,
+        buttonLabel: null,
+        icon: null,
+    },
+    bottomSheetAlertConfig: {
+        visible: false,
+        message: null,
+        icon: null,
+    },
     toastConfig: {
         visible: true,
     },
@@ -21,6 +34,8 @@ const initialState = {
 
 export const commonReducer = (state = initialState, action: any) => {
     switch (action.type) {
+        case ActionTypes.setColorScheme:
+            return { ...state, ...{ colorScheme: action.payload } };
         case ActionTypes.setErrorConfig:
             return { ...state, ...{ errorConfig: action.payload } };
         case ActionTypes.setLoading:
@@ -32,6 +47,10 @@ export const commonReducer = (state = initialState, action: any) => {
                 ...state,
                 ...{ alert: action.alert, alertMessage: action.alertMessage },
             };
+        case ActionTypes.setBottomSheetConfig:
+            return { ...state, ...{ bottomSheetConfig: action.payload } };
+        case ActionTypes.setBottomSheetAlertConfig:
+            return { ...state, ...{ bottomSheetAlertConfig: action.payload } };
         case ActionTypes.setKeyboardVisible:
             return { ...state, ...{ keyboardVisible: action.payload } };
         case ActionTypes.setToastConfig:

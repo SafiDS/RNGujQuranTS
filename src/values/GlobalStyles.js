@@ -1,14 +1,14 @@
 export const FontSize = {
-    text32: '32rem',
-    text26: '26rem',
-    text24: '24rem',
-    text22: '22rem',
-    text20: '20rem',
-    text18: '18rem',
-    text16: '16rem',
-    text14: '14rem',
-    text12: '12rem',
-    text10: '10rem',
+    text32: 32,
+    text26: 26,
+    text24: 24,
+    text22: 22,
+    text20: 20,
+    text18: 18,
+    text16: 16,
+    text14: 14,
+    text12: 12,
+    text10: 10,
 };
 
 
